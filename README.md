@@ -5,7 +5,7 @@
 ```ts
 import { compression } from "@lucid-softworks/http-compression";
 
-app.use(compression({ minimumBytes: 1024 }));
+const middleware = compression({ minimumBytes: 1024 });
 ```
 
 HEAD, empty, already encoded, small, and non-negotiated responses pass
